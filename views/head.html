@@ -21,14 +21,38 @@
 </noscript>
 <![endif]-->
 <head>
-    <meta content="utf-8"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>运宝通</title>
     <!--rel This attribute names a relationship of the linked document to the current document. type This attribute is used to define the type of the content linked to.-->
     <link rel="icon" type="image/png" href="images/favicon.ico"/>
+
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+
 </head>
 
-<body data-spy="scroll" data-target=".navbar-fixed-top">
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
+<!-- Fixed navbar -->
+<nav class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <span class="icon-bar"><a class="navbar-brand" href="#"><img src="images/favicon.ico"/> </a></span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="./">首页</a></li>
+                <li><a href="./">智慧城市</a></li>
+                <li><a href="./">产品中心</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
