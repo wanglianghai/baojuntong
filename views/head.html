@@ -1,0 +1,34 @@
+<!--指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令-->
+<!--该 DTD 包含所有 HTML 元素和属性，包括展示性的和弃用的元素（比如 font）。不允许框架集（Framesets）。必须以格式正确的 XML 来编写标记。-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--其他浏览器会将其作为注释而忽略这些语句，因为他们是IE专门提供的一种语法，如此就能根据不同的IE版本加载对应的CSS或者JS文件了。-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--&lt;!&ndash;[if lte IE 8]>-->
+<!--防止用户 禁用脚本，使页面出现空白要引导用户打开脚本：-->
+<noscript>
+    <style>.html5-wrappers{display:none!important;}</style>
+    <div class="ie-noscript-warning">您的浏览器禁用了脚本，请<a href="">查看这里</a>来启用脚本!或者<a href="/?noscript=1">继续访问</a>.
+    </div>
+</noscript>
+<![endif]-->
+<head>
+    <meta content="utf-8"/>
+    <title>运宝通</title>
+    <!--rel This attribute names a relationship of the linked document to the current document. type This attribute is used to define the type of the content linked to.-->
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
